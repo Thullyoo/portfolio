@@ -6,10 +6,25 @@
   width: 100%;
 }
 
+app-header{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range:  entry 0% cover 40%;
+}
+
 app-about-me{
   animation: appear linear;
   animation-timeline: view();
   animation-range:  entry 0% cover 40%;
+}
+
+app-my-projects{
+  
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range:  entry 0% cover 40%;
+  
+  
 }
 
 @keyframes appear {
