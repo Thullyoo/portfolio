@@ -1,0 +1,71 @@
+.about-me_container {
+  display: flex;
+  flex-direction: row;
+  max-width: 70%;
+  margin-bottom: 400px;
+  padding: 0px 150px;
+}
+
+.about_container h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  color: white;
+  width: 75%;
+}
+
+.about_container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.info_container {
+  display: flex;
+  gap: 20px;
+  width: 200px;
+  height: 200px;
+ 
+  border-radius: 50%;
+  animation: rotateCircle 10s infinite linear;
+}
+
+.circle-item {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-item:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translateX(80px);
+}
+
+.circle-item:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(60deg) translateX(80px);
+}
+
+.circle-item:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(120deg) translateX(80px);
+}
+
+.circle-item:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(180deg) translateX(80px);
+}
+
+.circle-item:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(240deg) translateX(80px);
+}
+
+.circle-item:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(300deg) translateX(80px);
+}
