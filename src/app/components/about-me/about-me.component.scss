@@ -67,3 +67,27 @@
 .circle-item:nth-child(6) {
   transform: translate(-50%, -50%) rotate(300deg) translateX(80px);
 }
+
+@media screen and (max-width: 425px) {
+  .about-me_container{
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 0px 0px 10px
+  }
+
+  .about_container h1 {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .circle-item {
+    position: absolute;
+    width: 40px;
+  }
+
+  .info_container{
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+}
