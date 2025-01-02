@@ -76,3 +76,12 @@ img {
   from, to { border-color: transparent; }
   50% { border-color: white; }
 }
+
+
+@media screen and (max-width: 425px) {
+  .typewriter h2{
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-right: 0; 
+  }
+}
