@@ -16,7 +16,6 @@
     text-transform: uppercase; 
     letter-spacing: 2px; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    margin-bottom: 20px; 
     transition: transform 0.3s ease, color 0.3s ease; 
   }
 }
@@ -26,13 +25,14 @@
   flex-direction: row;
   align-items: center;
   justify-items: center;
-  width: 85%;
+  width: 100%;
   height: auto;
   overflow-x: auto; 
   scrollbar-color: orange transparent; 
   scrollbar-width: thin; 
   padding-bottom: 20px;
   padding-top: 40px;
+  gap: 20px
 }
 
 .projects_container::-webkit-scrollbar {
@@ -63,4 +63,32 @@ app-project-card {
 app-project-card:hover {
   transform: translateY(-8px); 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+
+@media screen and (max-width: 1740px) {
+  .projects_container{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1392px) {
+  .projects_container{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .projects_container{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .projects_container{
+    width: 20%;
+  }
+  .my-projects_container h1{
+    font-size: 30px;
+  }
 }
